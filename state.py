@@ -7,7 +7,7 @@ num_rows = 3
 num_cols = 3
 
 
-# the state of this game is the board state of both the agent as wel as its opponent
+# the state of this game is the board state of both the agent as well as its opponent
 class State:
     # method that will initialize a tic tac toe playing board
     def __init__(self, p1, p2):

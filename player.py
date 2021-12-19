@@ -71,12 +71,6 @@ class Player:
     def reset(self):
         self.states = []
 
-    # # at the end of training our agent is able to learn its policy that is stored in the states value dict
-    # # save the policy to enable play against human player
-    # def save_policy(self):
-    #     fw = open('policy_' + str(self.name), 'wb')
-    #     pickle.dump(self.states_value, fw)
-    #     fw.close()
     # at the end of training our agent is able to learn its policy that is stored in the states value dict
     # save the policy to enable play against human player
     def save_policy(self, difficulty=''):
