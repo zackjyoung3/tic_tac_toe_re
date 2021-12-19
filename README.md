@@ -1,10 +1,14 @@
 Reinforcement Learning Project with tic tac toe
+
 State- the state of the game in this context is the board state of the agent as well as its opponent. Note that the State class enables play both between agents for
 learning and then play against a human player. Records the board state of both players and updates when either takes an action. Also note that empty cell in board
 is indicated by 0 and player marks represented by + or -1. 
+
 action- the action that is to be taken by the player given the current board state
+
 reward- between 0 and 1 and given at the end of a game. Note that in my implemenation for p1 the reward for a draw is 0.1. Also note that I applied value iteration
 to update the value of states
+
 Player- the Player class represents the agent. Note that I set exploratory rate to 0.3 and thus, the agent will exploit the knowledge that it already knows taking
 the greedy action 70% of the time and will take random exploratory moves 30% of the time. Has save_policy to save the policy obtained from training and load_policy
 to load the policy obtained in training.
