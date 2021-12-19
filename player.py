@@ -12,7 +12,7 @@ num_cols = 3
 # update states-value estimation after each game as well as save and load policies
 class Player:
     # initialise a dict storing state-value pair and update the estimates at the end of each game
-    # note that the default value for exploration ratre is 0.3 => the player will take the greedy
+    # note that the default value for exploration rate is 0.3 => the player will take the greedy
     # action 70% of the time and random, exploratory action 30%
     def __init__(self, name, exp_rate=0.3):
         self.name = name
